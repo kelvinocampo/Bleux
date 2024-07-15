@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    position: relative;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
 }
@@ -18,19 +19,19 @@ header {
     justify-content: space-around;
     align-items: center;
 
-    & nav {
+    nav {
         display: flex;
         justify-content: space-between;
         width: 30%;
         align-items: center;
     }
 
-    & a {
+    a {
         color: white;
         font-size: 1.2rem;
     }
 
-    & .download {
+    .download {
         background: linear-gradient(90deg, #7f45d6, #047fd6);
         color: white;
         border: none;
@@ -39,7 +40,7 @@ header {
         border-radius: .4rem;
     }
 
-    & .img {
+    .img {
         width: 14rem;
         height: 6rem;
     }
@@ -51,63 +52,151 @@ header {
     display: flex;
 
 
-    & .bg-violet {
+    .bg-violet {
         background-color: #2e244f;
         display: flex;
         align-items: center;
         padding-left: 12rem;
         width: 50%;
 
-        
-        & .section1-text {
+        .section1-text {
             display: flex;
             gap: 3rem;
             flex-direction: column;
-            justify-content: initial;
+            align-items: baseline;
             color: #fff;
 
-            & h1{
+            h1 {
                 font-size: 6rem;
             }
 
-            & p{
+            p {
                 font-size: 1.6rem;
             }
 
-            & .container-button{
+            .container-button {
                 border: 2px solid #544d70;
-                padding: 4px;
-                border-radius: .4rem;
+                padding: 6px;
+                border-radius: .6rem;
                 display: flex;
-                gap: .4rem;
+                gap: .6rem;
 
-                & button{
+                button {
                     background: transparent;
                     border: 2px solid white;
+                    border-radius: 0.4rem;
                     color: white;
                     padding: 1rem 1.4rem;
                     font-size: 1.6rem;
+
+                    span {
+                        background: linear-gradient(to right, #ed66ac, #f51689);
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+
+                    &:first-child {
+                        background-color: #fff;
+                    }
                 }
             }
-
-
         }
     }
 
-    & .bg-hoja {
+    .bg-hoja {
         background-position: center;
         background-size: cover;
         width: 50%;
         height: 100%;
         background-image: url("../assets/imagenes/hojasFondo.jpg");
-        display: flex;
-        padding-left: 12rem;
-        justify-content: start;
-        align-items: center;
 
-        & .img {
-            width: 30%;
+
+        .violet-transparent {
+            background-color: rgba(102, 51, 153, 0.346);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+            .img {
+                margin-left: 12rem;
+                width: 40%;
+            }
         }
     }
+}
 
+.section2 {
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    padding: 2rem 0;
+    flex-direction: column;
+    gap: 2rem;
+
+    h2 {
+        color: #f51488;
+        font-size: 5rem;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .section2-container {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+
+        .img {
+            width: 40%;
+        }
+
+        .section2-text {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            h3 {
+                margin-bottom: 1rem;
+                color: #c24e8a;
+                font-size: 4rem;
+                font-weight: 400;
+            }
+
+            h4 {
+                color: #f51488;
+                font-weight: 400;
+                font-size: 2rem;
+
+                &::before {
+                    content: "-- ";
+                    font-weight: 700;
+                    color: #f51488;
+                    padding-right: 4px;
+                }
+            }
+
+            p,
+            ul li {
+                font-size: 1.4rem;
+                color: #757578;
+            }
+
+            ul {
+                li {
+                    display: flex;
+
+                    &::before {
+                        content: "\2713";
+                        color: #f51488;
+                        padding-right: 4px;
+                    }
+                }
+            }
+
+        }
+    }
 }
