@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-color: #1e162e;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & nav {
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+        align-items: center;
+    }
+
+    & a {
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    & .download {
+        background: linear-gradient(90deg, #7f45d6, #047fd6);
+        color: white;
+        border: none;
+        font-size: 1.2rem;
+        padding: 1rem 1.4rem;
+        border-radius: .4rem;
+    }
+
+    & .img {
+        width: 14rem;
+        height: 6rem;
+    }
+}
+
+.section1 {
+    height: 50rem;
+    width: 100%;
+    display: flex;
+
+
+    & .bg-violet {
+        background-color: #2e244f;
+        display: flex;
+        align-items: center;
+        padding-left: 12rem;
+        width: 50%;
+
+        
+        & .section1-text {
+            display: flex;
+            gap: 3rem;
+            flex-direction: column;
+            justify-content: initial;
+            color: #fff;
+
+            & h1{
+                font-size: 6rem;
+            }
+
+            & p{
+                font-size: 1.6rem;
+            }
+
+            & .container-button{
+                border: 2px solid #544d70;
+                padding: 4px;
+                border-radius: .4rem;
+                display: flex;
+                gap: .4rem;
+
+                & button{
+                    background: transparent;
+                    border: 2px solid white;
+                    color: white;
+                    padding: 1rem 1.4rem;
+                    font-size: 1.6rem;
+                }
+            }
+
+
+        }
+    }
+
+    & .bg-hoja {
+        background-position: center;
+        background-size: cover;
+        width: 50%;
+        height: 100%;
+        background-image: url("../assets/imagenes/hojasFondo.jpg");
+        display: flex;
+        padding-left: 12rem;
+        justify-content: start;
+        align-items: center;
+
+        & .img {
+            width: 30%;
+        }
+    }
+
+}
