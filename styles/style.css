@@ -6,11 +6,11 @@
     text-decoration: none;
 }
 
-@counter-style section3-list {
+/* @counter-style section3-list {
     system: fixed;
     symbols: "\2605" "\2713" "\2713" "\2713" "x";
     suffix:"    ";
-}
+} */
 
 .img  {
     display: flex;
@@ -21,6 +21,10 @@
         width: 100%;
         height: 100%;
     }
+}
+
+.check{
+    color: #f5208e;
 }
 
 header {
@@ -275,8 +279,9 @@ header {
             }
 
             ul{
-                list-style: section3-list;
+                /* list-style: section3-list; */
                 font-size: 1.4rem;
+
 
             }
 
