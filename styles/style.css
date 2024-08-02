@@ -30,6 +30,8 @@ header {
     background-color: #1e162e;
     width: 100%;
     display: flex;
+    position: sticky;
+    top: 0;
     justify-content: space-around;
     align-items: center;
     padding: 1rem 0;
